@@ -13,8 +13,8 @@ pipeline {
                     // Step 2: Running the script
                     echo 'Step 2: Running the Hello World script'
                     // Run the shell script or Python script here
-                    sh './hello.sh'   // For a shell script
-                    // sh 'python hello.py'  // Uncomment this for a Python script
+                    // sh './hello.sh'   // For a shell script
+                    sh 'python hello.py'  // Uncomment this for a Python script
                 }
             }
         }
