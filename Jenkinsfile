@@ -12,9 +12,9 @@ pipeline {
                 script {
                     // Step 2: Running the script
                     echo 'Step 2: Running the Hello World script'
-                    // Run the shell script or Python script here
-                    // sh './hello.sh'   // For a shell script
-                    sh 'python hello.py'  // Uncomment this for a Python script
+                    // Run the batch script or Python script here
+                    // bat 'hello.bat'   // For a batch script
+                    bat 'python hello.py'  // Uncomment this for a Python script
                 }
             }
         }
@@ -24,6 +24,8 @@ pipeline {
                 script {
                     // Step 3: Placeholder for testing
                     echo 'Running a test in the Test stage.'
+                    // Add your test commands here
+                    // Example: bat 'run-tests.bat'
                 }
             }
         }
@@ -33,6 +35,8 @@ pipeline {
                 script {
                     // Step 4: Placeholder for deployment
                     echo 'Deploying the application in the Deploy stage.'
+                    // Add your deployment commands here
+                    // Example: bat 'deploy.bat'
                 }
             }
         }
